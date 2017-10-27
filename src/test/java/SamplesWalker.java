@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.function.Consumer;
 
-public class SamplesWalker {
+public final class SamplesWalker {
 
     /**
      * @return true, если удалось разобрать успешно
