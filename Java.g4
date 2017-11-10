@@ -509,6 +509,7 @@ expression
     |   expression '(' expressionList? ')'
     |   'new' creator
     |   '(' typeType ')' expression
+    |   typeType '(' expression ')'
     |   expression ('++' | '--')
     |   ('+'|'-'|'++'|'--') expression
     |   ('~'|'!') expression

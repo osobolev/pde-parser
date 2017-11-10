@@ -8,7 +8,7 @@ import java.io.IOException;
 public final class ParserTest {
 
     public static void main(String[] args) throws IOException {
-        JavaLexer lexer = new JavaLexer(CharStreams.fromFileName("C:\\temp\\processing_repo\\src\\test\\resources\\Basics\\Arrays\\Array2D\\Array2D.pde"));
+        JavaLexer lexer = new JavaLexer(CharStreams.fromFileName("src/test/resources/Basics/Data/TrueFalse/TrueFalse.pde"));
         JavaParser parser = new JavaParser(new CommonTokenStream(lexer));
 
         parser.activeProgram();
