@@ -27,14 +27,14 @@ public final class SamplesWalker {
     public static void main(String[] args) throws IOException {
         PDEConsumer pathConsumer = new PDEConsumer();
         Files.walk(Paths.get("src/test/resources")).forEach(pathConsumer);
-        System.out.println("Error: " + pathConsumer.getCounterError());
+        System.out.println("Error: " + pathConsumer.getCountError());
         System.out.println("OK: " + pathConsumer.getCountOK());
     }
 
-    private static class PDEConsumer implements Consumer<Path> {
+    private static final class PDEConsumer implements Consumer<Path> {
 
         private int countOK = 0;
-        private int counterError = 0;
+        private int countError = 0;
 
         @Override
         public void accept(Path path) {
@@ -52,7 +52,7 @@ public final class SamplesWalker {
                 countOK++;
             } else {
                 System.out.println(path);
-                counterError++;
+                countError++;
             }
         }
 
@@ -60,8 +60,8 @@ public final class SamplesWalker {
             return countOK;
         }
 
-        public int getCounterError() {
-            return counterError;
+        public int getCountError() {
+            return countError;
         }
     }
 }
