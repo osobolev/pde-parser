@@ -40,14 +40,24 @@
  */
 grammar Java;
 
+program
+    :   activeProgram
+    |   staticProgram
+    |   compilationUnit
+    ;
+
 // starting point for parsing a java file
 compilationUnit
     :   packageDeclaration? importDeclaration* typeDeclaration* EOF
     ;
 
 activeProgram
-    :   (classBodyDeclaration)+ EOF
+    :   packageDeclaration? importDeclaration* classBodyDeclaration+ EOF
     ;
+
+staticProgram
+    :   packageDeclaration? importDeclaration* blockStatement+ EOF
+    ; 
 
 packageDeclaration
     :   annotation* 'package' qualifiedName ';'
@@ -1009,7 +1019,7 @@ ELLIPSIS : '...';
 // Whitespace and comments
 //
 
-WS  :  [ \t\r\n\u000C]+ -> skip
+WS  :  [ \t\r\n\u000C]+ -> channel(HIDDEN)
     ;
 
 COMMENT

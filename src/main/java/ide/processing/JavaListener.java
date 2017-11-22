@@ -8,6 +8,16 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface JavaListener extends ParseTreeListener {
 	/**
+	 * Enter a parse tree produced by {@link JavaParser#program}.
+	 * @param ctx the parse tree
+	 */
+	void enterProgram(JavaParser.ProgramContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaParser#program}.
+	 * @param ctx the parse tree
+	 */
+	void exitProgram(JavaParser.ProgramContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link JavaParser#compilationUnit}.
 	 * @param ctx the parse tree
 	 */
@@ -27,6 +37,16 @@ public interface JavaListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitActiveProgram(JavaParser.ActiveProgramContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link JavaParser#staticProgram}.
+	 * @param ctx the parse tree
+	 */
+	void enterStaticProgram(JavaParser.StaticProgramContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JavaParser#staticProgram}.
+	 * @param ctx the parse tree
+	 */
+	void exitStaticProgram(JavaParser.StaticProgramContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link JavaParser#packageDeclaration}.
 	 * @param ctx the parse tree

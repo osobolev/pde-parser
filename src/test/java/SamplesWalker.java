@@ -1,6 +1,7 @@
 import ide.processing.JavaLexer;
 import ide.processing.JavaParser;
-import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.CharStreams;
+import org.antlr.v4.runtime.CommonTokenStream;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -20,13 +21,14 @@ public final class SamplesWalker {
         parser.removeErrorListeners();
         MyErrorListener listener = new MyErrorListener();
         parser.addErrorListener(listener);
-        parser.activeProgram();
+        parser.program();
         return !listener.isError();
     }
 
     public static void main(String[] args) throws IOException {
         PDEConsumer pathConsumer = new PDEConsumer();
-        Files.walk(Paths.get("src/test/resources")).forEach(pathConsumer);
+        Path start = Paths.get("src/test/resources");
+        Files.walk(start).forEach(pathConsumer);
         System.out.println("Error: " + pathConsumer.getCountError());
         System.out.println("OK: " + pathConsumer.getCountOK());
     }
@@ -45,7 +47,7 @@ public final class SamplesWalker {
             boolean ok = false;
             try {
                 ok = tryParse(path);
-            } catch (IOException ex) {
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
             if (ok) {
