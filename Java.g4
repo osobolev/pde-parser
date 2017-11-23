@@ -519,7 +519,7 @@ expression
     |   expression '(' expressionList? ')'
     |   'new' creator
     |   '(' typeType ')' expression
-    |   typeType '(' expression ')'
+    |   primitiveType '(' expression ')'
     |   expression ('++' | '--')
     |   ('+'|'-'|'++'|'--') expression
     |   ('~'|'!') expression

@@ -6638,6 +6638,9 @@ public class JavaParser extends Parser {
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
+		public PrimitiveTypeContext primitiveType() {
+			return getRuleContext(PrimitiveTypeContext.class,0);
+		}
 		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
 		public InnerCreatorContext innerCreator() {
 			return getRuleContext(InnerCreatorContext.class,0);
@@ -6716,7 +6719,7 @@ public class JavaParser extends Parser {
 			case 4:
 				{
 				setState(1099);
-				typeType();
+				primitiveType();
 				setState(1100);
 				match(LPAREN);
 				setState(1101);
@@ -8597,7 +8600,7 @@ public class JavaParser extends Parser {
 		"\u0443\5\u00b6\\\2\u0443\u00b5\3\2\2\2\u0444\u0445\b\\\1\2\u0445\u0457"+
 		"\5\u00b8]\2\u0446\u0447\7!\2\2\u0447\u0457\5\u00ba^\2\u0448\u0449\7;\2"+
 		"\2\u0449\u044a\5T+\2\u044a\u044b\7<\2\2\u044b\u044c\5\u00b6\\\24\u044c"+
-		"\u0457\3\2\2\2\u044d\u044e\5T+\2\u044e\u044f\7;\2\2\u044f\u0450\5\u00b6"+
+		"\u0457\3\2\2\2\u044d\u044e\5X-\2\u044e\u044f\7;\2\2\u044f\u0450\5\u00b6"+
 		"\\\2\u0450\u0451\7<\2\2\u0451\u0457\3\2\2\2\u0452\u0453\t\7\2\2\u0453"+
 		"\u0457\5\u00b6\\\21\u0454\u0455\t\b\2\2\u0455\u0457\5\u00b6\\\20\u0456"+
 		"\u0444\3\2\2\2\u0456\u0446\3\2\2\2\u0456\u0448\3\2\2\2\u0456\u044d\3\2"+
