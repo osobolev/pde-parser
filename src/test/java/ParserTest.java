@@ -11,11 +11,6 @@ public final class ParserTest {
         ProcessingLexer lexer = new ProcessingLexer(CharStreams.fromFileName("src/test/resources/Basics/Data/TrueFalse/TrueFalse.pde"));
         ProcessingParser parser = new ProcessingParser(new CommonTokenStream(lexer));
 
-        parser.activeProgram();
-        System.out.println("Active OK");
-
-//        lexer.reset();
-//        parser.reset();
-//        parser.compilationUnit();
+        parser.program();
     }
 }

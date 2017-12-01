@@ -1,0 +1,19 @@
+<html>
+<head>
+  <script type="text/javascript">var Smoothie = {'requirePath':['/parser/']};</script>
+  <script type="text/javascript" language="javascript" src="parser/require.js"></script>
+  <script type="text/javascript" language="javascript" src="parser/processing.js"></script>
+
+  <script>
+    function check() {
+      var text = document.getElementById('src').value;
+      parseProcessing(text, function (line, column, len, msg) {
+        console.log(line, column, len, msg);
+      });
+    }
+  </script>
+</head>
+<body>
+  <textarea id=src rows=10 cols=80 onkeyup="check()"></textarea>
+</body>
+</html>
