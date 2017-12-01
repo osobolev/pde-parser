@@ -1,4 +1,4 @@
-// Generated from Java.g4 by ANTLR 4.7
+// Generated from Processing.g4 by ANTLR 4.7
 package ide.processing;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class JavaParser extends Parser {
+public class ProcessingParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -166,7 +166,7 @@ public class JavaParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "Java.g4"; }
+	public String getGrammarFileName() { return "Processing.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -177,7 +177,7 @@ public class JavaParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public JavaParser(TokenStream input) {
+	public ProcessingParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
@@ -195,14 +195,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_program; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterProgram(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitProgram(this);
-		}
 	}
 
 	public final ProgramContext program() throws RecognitionException {
@@ -247,7 +239,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class CompilationUnitContext extends ParserRuleContext {
-		public TerminalNode EOF() { return getToken(JavaParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(ProcessingParser.EOF, 0); }
 		public PackageDeclarationContext packageDeclaration() {
 			return getRuleContext(PackageDeclarationContext.class,0);
 		}
@@ -267,14 +259,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_compilationUnit; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterCompilationUnit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitCompilationUnit(this);
-		}
 	}
 
 	public final CompilationUnitContext compilationUnit() throws RecognitionException {
@@ -338,7 +322,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class ActiveProgramContext extends ParserRuleContext {
-		public TerminalNode EOF() { return getToken(JavaParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(ProcessingParser.EOF, 0); }
 		public PackageDeclarationContext packageDeclaration() {
 			return getRuleContext(PackageDeclarationContext.class,0);
 		}
@@ -358,14 +342,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_activeProgram; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterActiveProgram(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitActiveProgram(this);
-		}
 	}
 
 	public final ActiveProgramContext activeProgram() throws RecognitionException {
@@ -429,7 +405,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class StaticProgramContext extends ParserRuleContext {
-		public TerminalNode EOF() { return getToken(JavaParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(ProcessingParser.EOF, 0); }
 		public PackageDeclarationContext packageDeclaration() {
 			return getRuleContext(PackageDeclarationContext.class,0);
 		}
@@ -449,14 +425,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_staticProgram; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterStaticProgram(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitStaticProgram(this);
-		}
 	}
 
 	public final StaticProgramContext staticProgram() throws RecognitionException {
@@ -533,14 +501,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_packageDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterPackageDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitPackageDeclaration(this);
-		}
 	}
 
 	public final PackageDeclarationContext packageDeclaration() throws RecognitionException {
@@ -591,14 +551,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_importDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterImportDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitImportDeclaration(this);
-		}
 	}
 
 	public final ImportDeclarationContext importDeclaration() throws RecognitionException {
@@ -672,14 +624,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterTypeDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitTypeDeclaration(this);
-		}
 	}
 
 	public final TypeDeclarationContext typeDeclaration() throws RecognitionException {
@@ -805,14 +749,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_modifier; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterModifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitModifier(this);
-		}
 	}
 
 	public final ModifierContext modifier() throws RecognitionException {
@@ -878,14 +814,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_classOrInterfaceModifier; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterClassOrInterfaceModifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitClassOrInterfaceModifier(this);
-		}
 	}
 
 	public final ClassOrInterfaceModifierContext classOrInterfaceModifier() throws RecognitionException {
@@ -947,14 +875,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variableModifier; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterVariableModifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitVariableModifier(this);
-		}
 	}
 
 	public final VariableModifierContext variableModifier() throws RecognitionException {
@@ -994,7 +914,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class ClassDeclarationContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public ClassBodyContext classBody() {
 			return getRuleContext(ClassBodyContext.class,0);
 		}
@@ -1011,14 +931,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_classDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterClassDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitClassDeclaration(this);
-		}
 	}
 
 	public final ClassDeclarationContext classDeclaration() throws RecognitionException {
@@ -1092,14 +1004,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeParameters; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterTypeParameters(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitTypeParameters(this);
-		}
 	}
 
 	public final TypeParametersContext typeParameters() throws RecognitionException {
@@ -1145,7 +1049,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class TypeParameterContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public TypeBoundContext typeBound() {
 			return getRuleContext(TypeBoundContext.class,0);
 		}
@@ -1153,14 +1057,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeParameter; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterTypeParameter(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitTypeParameter(this);
-		}
 	}
 
 	public final TypeParameterContext typeParameter() throws RecognitionException {
@@ -1208,14 +1104,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeBound; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterTypeBound(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitTypeBound(this);
-		}
 	}
 
 	public final TypeBoundContext typeBound() throws RecognitionException {
@@ -1257,8 +1145,8 @@ public class JavaParser extends Parser {
 	}
 
 	public static class EnumDeclarationContext extends ParserRuleContext {
-		public TerminalNode ENUM() { return getToken(JavaParser.ENUM, 0); }
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode ENUM() { return getToken(ProcessingParser.ENUM, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public TypeListContext typeList() {
 			return getRuleContext(TypeListContext.class,0);
 		}
@@ -1272,14 +1160,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enumDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterEnumDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitEnumDeclaration(this);
-		}
 	}
 
 	public final EnumDeclarationContext enumDeclaration() throws RecognitionException {
@@ -1363,14 +1243,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enumConstants; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterEnumConstants(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitEnumConstants(this);
-		}
 	}
 
 	public final EnumConstantsContext enumConstants() throws RecognitionException {
@@ -1414,7 +1286,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class EnumConstantContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public List<AnnotationContext> annotation() {
 			return getRuleContexts(AnnotationContext.class);
 		}
@@ -1431,14 +1303,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enumConstant; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterEnumConstant(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitEnumConstant(this);
-		}
 	}
 
 	public final EnumConstantContext enumConstant() throws RecognitionException {
@@ -1508,14 +1372,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enumBodyDeclarations; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterEnumBodyDeclarations(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitEnumBodyDeclarations(this);
-		}
 	}
 
 	public final EnumBodyDeclarationsContext enumBodyDeclarations() throws RecognitionException {
@@ -1555,7 +1411,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class InterfaceDeclarationContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public InterfaceBodyContext interfaceBody() {
 			return getRuleContext(InterfaceBodyContext.class,0);
 		}
@@ -1569,14 +1425,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interfaceDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterInterfaceDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitInterfaceDeclaration(this);
-		}
 	}
 
 	public final InterfaceDeclarationContext interfaceDeclaration() throws RecognitionException {
@@ -1638,14 +1486,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeList; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterTypeList(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitTypeList(this);
-		}
 	}
 
 	public final TypeListContext typeList() throws RecognitionException {
@@ -1697,14 +1537,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_classBody; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterClassBody(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitClassBody(this);
-		}
 	}
 
 	public final ClassBodyContext classBody() throws RecognitionException {
@@ -1756,14 +1588,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interfaceBody; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterInterfaceBody(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitInterfaceBody(this);
-		}
 	}
 
 	public final InterfaceBodyContext interfaceBody() throws RecognitionException {
@@ -1821,14 +1645,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_classBodyDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterClassBodyDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitClassBodyDeclaration(this);
-		}
 	}
 
 	public final ClassBodyDeclarationContext classBodyDeclaration() throws RecognitionException {
@@ -1932,14 +1748,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_memberDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterMemberDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitMemberDeclaration(this);
-		}
 	}
 
 	public final MemberDeclarationContext memberDeclaration() throws RecognitionException {
@@ -2026,7 +1834,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class MethodDeclarationContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public FormalParametersContext formalParameters() {
 			return getRuleContext(FormalParametersContext.class,0);
 		}
@@ -2043,14 +1851,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_methodDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterMethodDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitMethodDeclaration(this);
-		}
 	}
 
 	public final MethodDeclarationContext methodDeclaration() throws RecognitionException {
@@ -2160,14 +1960,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_genericMethodDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterGenericMethodDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitGenericMethodDeclaration(this);
-		}
 	}
 
 	public final GenericMethodDeclarationContext genericMethodDeclaration() throws RecognitionException {
@@ -2194,7 +1986,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class ConstructorDeclarationContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public FormalParametersContext formalParameters() {
 			return getRuleContext(FormalParametersContext.class,0);
 		}
@@ -2208,14 +2000,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_constructorDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterConstructorDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitConstructorDeclaration(this);
-		}
 	}
 
 	public final ConstructorDeclarationContext constructorDeclaration() throws RecognitionException {
@@ -2267,14 +2051,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_genericConstructorDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterGenericConstructorDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitGenericConstructorDeclaration(this);
-		}
 	}
 
 	public final GenericConstructorDeclarationContext genericConstructorDeclaration() throws RecognitionException {
@@ -2311,14 +2087,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_fieldDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterFieldDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitFieldDeclaration(this);
-		}
 	}
 
 	public final FieldDeclarationContext fieldDeclaration() throws RecognitionException {
@@ -2360,14 +2128,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interfaceBodyDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterInterfaceBodyDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitInterfaceBodyDeclaration(this);
-		}
 	}
 
 	public final InterfaceBodyDeclarationContext interfaceBodyDeclaration() throws RecognitionException {
@@ -2474,14 +2234,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interfaceMemberDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterInterfaceMemberDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitInterfaceMemberDeclaration(this);
-		}
 	}
 
 	public final InterfaceMemberDeclarationContext interfaceMemberDeclaration() throws RecognitionException {
@@ -2567,14 +2319,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_constDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterConstDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitConstDeclaration(this);
-		}
 	}
 
 	public final ConstDeclarationContext constDeclaration() throws RecognitionException {
@@ -2620,7 +2364,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class ConstantDeclaratorContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public VariableInitializerContext variableInitializer() {
 			return getRuleContext(VariableInitializerContext.class,0);
 		}
@@ -2628,14 +2372,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_constantDeclarator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterConstantDeclarator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitConstantDeclarator(this);
-		}
 	}
 
 	public final ConstantDeclaratorContext constantDeclarator() throws RecognitionException {
@@ -2681,7 +2417,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class InterfaceMethodDeclarationContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public FormalParametersContext formalParameters() {
 			return getRuleContext(FormalParametersContext.class,0);
 		}
@@ -2695,14 +2431,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interfaceMethodDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterInterfaceMethodDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitInterfaceMethodDeclaration(this);
-		}
 	}
 
 	public final InterfaceMethodDeclarationContext interfaceMethodDeclaration() throws RecognitionException {
@@ -2796,14 +2524,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_genericInterfaceMethodDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterGenericInterfaceMethodDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitGenericInterfaceMethodDeclaration(this);
-		}
 	}
 
 	public final GenericInterfaceMethodDeclarationContext genericInterfaceMethodDeclaration() throws RecognitionException {
@@ -2840,14 +2560,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variableDeclarators; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterVariableDeclarators(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitVariableDeclarators(this);
-		}
 	}
 
 	public final VariableDeclaratorsContext variableDeclarators() throws RecognitionException {
@@ -2899,14 +2611,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variableDeclarator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterVariableDeclarator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitVariableDeclarator(this);
-		}
 	}
 
 	public final VariableDeclaratorContext variableDeclarator() throws RecognitionException {
@@ -2944,19 +2648,11 @@ public class JavaParser extends Parser {
 	}
 
 	public static class VariableDeclaratorIdContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public VariableDeclaratorIdContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variableDeclaratorId; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterVariableDeclaratorId(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitVariableDeclaratorId(this);
-		}
 	}
 
 	public final VariableDeclaratorIdContext variableDeclaratorId() throws RecognitionException {
@@ -3008,14 +2704,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variableInitializer; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterVariableInitializer(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitVariableInitializer(this);
-		}
 	}
 
 	public final VariableInitializerContext variableInitializer() throws RecognitionException {
@@ -3091,14 +2779,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_arrayInitializer; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterArrayInitializer(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitArrayInitializer(this);
-		}
 	}
 
 	public final ArrayInitializerContext arrayInitializer() throws RecognitionException {
@@ -3165,19 +2845,11 @@ public class JavaParser extends Parser {
 	}
 
 	public static class EnumConstantNameContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public EnumConstantNameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enumConstantName; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterEnumConstantName(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitEnumConstantName(this);
-		}
 	}
 
 	public final EnumConstantNameContext enumConstantName() throws RecognitionException {
@@ -3212,14 +2884,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeType; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterTypeType(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitTypeType(this);
-		}
 	}
 
 	public final TypeTypeContext typeType() throws RecognitionException {
@@ -3303,9 +2967,9 @@ public class JavaParser extends Parser {
 	}
 
 	public static class ClassOrInterfaceTypeContext extends ParserRuleContext {
-		public List<TerminalNode> Identifier() { return getTokens(JavaParser.Identifier); }
+		public List<TerminalNode> Identifier() { return getTokens(ProcessingParser.Identifier); }
 		public TerminalNode Identifier(int i) {
-			return getToken(JavaParser.Identifier, i);
+			return getToken(ProcessingParser.Identifier, i);
 		}
 		public List<TypeArgumentsContext> typeArguments() {
 			return getRuleContexts(TypeArgumentsContext.class);
@@ -3317,14 +2981,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_classOrInterfaceType; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterClassOrInterfaceType(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitClassOrInterfaceType(this);
-		}
 	}
 
 	public final ClassOrInterfaceTypeContext classOrInterfaceType() throws RecognitionException {
@@ -3392,14 +3048,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_primitiveType; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterPrimitiveType(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitPrimitiveType(this);
-		}
 	}
 
 	public final PrimitiveTypeContext primitiveType() throws RecognitionException {
@@ -3443,14 +3091,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeArguments; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterTypeArguments(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitTypeArguments(this);
-		}
 	}
 
 	public final TypeArgumentsContext typeArguments() throws RecognitionException {
@@ -3503,14 +3143,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeArgument; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterTypeArgument(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitTypeArgument(this);
-		}
 	}
 
 	public final TypeArgumentContext typeArgument() throws RecognitionException {
@@ -3589,14 +3221,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_qualifiedNameList; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterQualifiedNameList(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitQualifiedNameList(this);
-		}
 	}
 
 	public final QualifiedNameListContext qualifiedNameList() throws RecognitionException {
@@ -3645,14 +3269,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_formalParameters; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterFormalParameters(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitFormalParameters(this);
-		}
 	}
 
 	public final FormalParametersContext formalParameters() throws RecognitionException {
@@ -3703,14 +3319,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_formalParameterList; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterFormalParameterList(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitFormalParameterList(this);
-		}
 	}
 
 	public final FormalParameterListContext formalParameterList() throws RecognitionException {
@@ -3796,14 +3404,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_formalParameter; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterFormalParameter(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitFormalParameter(this);
-		}
 	}
 
 	public final FormalParameterContext formalParameter() throws RecognitionException {
@@ -3861,14 +3461,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_lastFormalParameter; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterLastFormalParameter(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitLastFormalParameter(this);
-		}
 	}
 
 	public final LastFormalParameterContext lastFormalParameter() throws RecognitionException {
@@ -3919,14 +3511,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_methodBody; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterMethodBody(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitMethodBody(this);
-		}
 	}
 
 	public final MethodBodyContext methodBody() throws RecognitionException {
@@ -3958,14 +3542,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_constructorBody; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterConstructorBody(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitConstructorBody(this);
-		}
 	}
 
 	public final ConstructorBodyContext constructorBody() throws RecognitionException {
@@ -3990,22 +3566,14 @@ public class JavaParser extends Parser {
 	}
 
 	public static class QualifiedNameContext extends ParserRuleContext {
-		public List<TerminalNode> Identifier() { return getTokens(JavaParser.Identifier); }
+		public List<TerminalNode> Identifier() { return getTokens(ProcessingParser.Identifier); }
 		public TerminalNode Identifier(int i) {
-			return getToken(JavaParser.Identifier, i);
+			return getToken(ProcessingParser.Identifier, i);
 		}
 		public QualifiedNameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_qualifiedName; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterQualifiedName(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitQualifiedName(this);
-		}
 	}
 
 	public final QualifiedNameContext qualifiedName() throws RecognitionException {
@@ -4049,23 +3617,15 @@ public class JavaParser extends Parser {
 	}
 
 	public static class LiteralContext extends ParserRuleContext {
-		public TerminalNode IntegerLiteral() { return getToken(JavaParser.IntegerLiteral, 0); }
-		public TerminalNode FloatingPointLiteral() { return getToken(JavaParser.FloatingPointLiteral, 0); }
-		public TerminalNode CharacterLiteral() { return getToken(JavaParser.CharacterLiteral, 0); }
-		public TerminalNode StringLiteral() { return getToken(JavaParser.StringLiteral, 0); }
-		public TerminalNode BooleanLiteral() { return getToken(JavaParser.BooleanLiteral, 0); }
+		public TerminalNode IntegerLiteral() { return getToken(ProcessingParser.IntegerLiteral, 0); }
+		public TerminalNode FloatingPointLiteral() { return getToken(ProcessingParser.FloatingPointLiteral, 0); }
+		public TerminalNode CharacterLiteral() { return getToken(ProcessingParser.CharacterLiteral, 0); }
+		public TerminalNode StringLiteral() { return getToken(ProcessingParser.StringLiteral, 0); }
+		public TerminalNode BooleanLiteral() { return getToken(ProcessingParser.BooleanLiteral, 0); }
 		public LiteralContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterLiteral(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitLiteral(this);
-		}
 	}
 
 	public final LiteralContext literal() throws RecognitionException {
@@ -4112,14 +3672,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotation; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterAnnotation(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitAnnotation(this);
-		}
 	}
 
 	public final AnnotationContext annotation() throws RecognitionException {
@@ -4182,14 +3734,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationName; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterAnnotationName(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitAnnotationName(this);
-		}
 	}
 
 	public final AnnotationNameContext annotationName() throws RecognitionException {
@@ -4224,14 +3768,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_elementValuePairs; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterElementValuePairs(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitElementValuePairs(this);
-		}
 	}
 
 	public final ElementValuePairsContext elementValuePairs() throws RecognitionException {
@@ -4273,7 +3809,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class ElementValuePairContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public ElementValueContext elementValue() {
 			return getRuleContext(ElementValueContext.class,0);
 		}
@@ -4281,14 +3817,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_elementValuePair; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterElementValuePair(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitElementValuePair(this);
-		}
 	}
 
 	public final ElementValuePairContext elementValuePair() throws RecognitionException {
@@ -4330,14 +3858,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_elementValue; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterElementValue(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitElementValue(this);
-		}
 	}
 
 	public final ElementValueContext elementValue() throws RecognitionException {
@@ -4420,14 +3940,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_elementValueArrayInitializer; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterElementValueArrayInitializer(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitElementValueArrayInitializer(this);
-		}
 	}
 
 	public final ElementValueArrayInitializerContext elementValueArrayInitializer() throws RecognitionException {
@@ -4494,7 +4006,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class AnnotationTypeDeclarationContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public AnnotationTypeBodyContext annotationTypeBody() {
 			return getRuleContext(AnnotationTypeBodyContext.class,0);
 		}
@@ -4502,14 +4014,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationTypeDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterAnnotationTypeDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitAnnotationTypeDeclaration(this);
-		}
 	}
 
 	public final AnnotationTypeDeclarationContext annotationTypeDeclaration() throws RecognitionException {
@@ -4550,14 +4054,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationTypeBody; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterAnnotationTypeBody(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitAnnotationTypeBody(this);
-		}
 	}
 
 	public final AnnotationTypeBodyContext annotationTypeBody() throws RecognitionException {
@@ -4612,14 +4108,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationTypeElementDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterAnnotationTypeElementDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitAnnotationTypeElementDeclaration(this);
-		}
 	}
 
 	public final AnnotationTypeElementDeclarationContext annotationTypeElementDeclaration() throws RecognitionException {
@@ -4721,14 +4209,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationTypeElementRest; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterAnnotationTypeElementRest(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitAnnotationTypeElementRest(this);
-		}
 	}
 
 	public final AnnotationTypeElementRestContext annotationTypeElementRest() throws RecognitionException {
@@ -4851,14 +4331,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationMethodOrConstantRest; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterAnnotationMethodOrConstantRest(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitAnnotationMethodOrConstantRest(this);
-		}
 	}
 
 	public final AnnotationMethodOrConstantRestContext annotationMethodOrConstantRest() throws RecognitionException {
@@ -4896,7 +4368,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class AnnotationMethodRestContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public DefaultValueContext defaultValue() {
 			return getRuleContext(DefaultValueContext.class,0);
 		}
@@ -4904,14 +4376,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationMethodRest; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterAnnotationMethodRest(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitAnnotationMethodRest(this);
-		}
 	}
 
 	public final AnnotationMethodRestContext annotationMethodRest() throws RecognitionException {
@@ -4958,14 +4422,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationConstantRest; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterAnnotationConstantRest(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitAnnotationConstantRest(this);
-		}
 	}
 
 	public final AnnotationConstantRestContext annotationConstantRest() throws RecognitionException {
@@ -4997,14 +4453,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_defaultValue; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterDefaultValue(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitDefaultValue(this);
-		}
 	}
 
 	public final DefaultValueContext defaultValue() throws RecognitionException {
@@ -5041,14 +4489,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_block; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterBlock(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitBlock(this);
-		}
 	}
 
 	public final BlockContext block() throws RecognitionException {
@@ -5103,14 +4543,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_blockStatement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterBlockStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitBlockStatement(this);
-		}
 	}
 
 	public final BlockStatementContext blockStatement() throws RecognitionException {
@@ -5162,14 +4594,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_localVariableDeclarationStatement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterLocalVariableDeclarationStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitLocalVariableDeclarationStatement(this);
-		}
 	}
 
 	public final LocalVariableDeclarationStatementContext localVariableDeclarationStatement() throws RecognitionException {
@@ -5212,14 +4636,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_localVariableDeclaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterLocalVariableDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitLocalVariableDeclaration(this);
-		}
 	}
 
 	public final LocalVariableDeclarationContext localVariableDeclaration() throws RecognitionException {
@@ -5264,7 +4680,7 @@ public class JavaParser extends Parser {
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public TerminalNode ASSERT() { return getToken(JavaParser.ASSERT, 0); }
+		public TerminalNode ASSERT() { return getToken(ProcessingParser.ASSERT, 0); }
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
 		}
@@ -5307,7 +4723,7 @@ public class JavaParser extends Parser {
 		public SwitchLabelContext switchLabel(int i) {
 			return getRuleContext(SwitchLabelContext.class,i);
 		}
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public StatementExpressionContext statementExpression() {
 			return getRuleContext(StatementExpressionContext.class,0);
 		}
@@ -5315,14 +4731,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterStatement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitStatement(this);
-		}
 	}
 
 	public final StatementContext statement() throws RecognitionException {
@@ -5678,7 +5086,7 @@ public class JavaParser extends Parser {
 		public CatchTypeContext catchType() {
 			return getRuleContext(CatchTypeContext.class,0);
 		}
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
@@ -5692,14 +5100,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_catchClause; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterCatchClause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitCatchClause(this);
-		}
 	}
 
 	public final CatchClauseContext catchClause() throws RecognitionException {
@@ -5759,14 +5159,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_catchType; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterCatchType(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitCatchType(this);
-		}
 	}
 
 	public final CatchTypeContext catchType() throws RecognitionException {
@@ -5815,14 +5207,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_finallyBlock; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterFinallyBlock(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitFinallyBlock(this);
-		}
 	}
 
 	public final FinallyBlockContext finallyBlock() throws RecognitionException {
@@ -5856,14 +5240,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_resourceSpecification; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterResourceSpecification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitResourceSpecification(this);
-		}
 	}
 
 	public final ResourceSpecificationContext resourceSpecification() throws RecognitionException {
@@ -5913,14 +5289,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_resources; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterResources(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitResources(this);
-		}
 	}
 
 	public final ResourcesContext resources() throws RecognitionException {
@@ -5983,14 +5351,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_resource; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterResource(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitResource(this);
-		}
 	}
 
 	public final ResourceContext resource() throws RecognitionException {
@@ -6052,14 +5412,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_switchBlockStatementGroup; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterSwitchBlockStatementGroup(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitSwitchBlockStatementGroup(this);
-		}
 	}
 
 	public final SwitchBlockStatementGroupContext switchBlockStatementGroup() throws RecognitionException {
@@ -6121,14 +5473,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_switchLabel; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterSwitchLabel(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitSwitchLabel(this);
-		}
 	}
 
 	public final SwitchLabelContext switchLabel() throws RecognitionException {
@@ -6199,14 +5543,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_forControl; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterForControl(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitForControl(this);
-		}
 	}
 
 	public final ForControlContext forControl() throws RecognitionException {
@@ -6287,14 +5623,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_forInit; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterForInit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitForInit(this);
-		}
 	}
 
 	public final ForInitContext forInit() throws RecognitionException {
@@ -6351,14 +5679,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enhancedForControl; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterEnhancedForControl(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitEnhancedForControl(this);
-		}
 	}
 
 	public final EnhancedForControlContext enhancedForControl() throws RecognitionException {
@@ -6411,14 +5731,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_forUpdate; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterForUpdate(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitForUpdate(this);
-		}
 	}
 
 	public final ForUpdateContext forUpdate() throws RecognitionException {
@@ -6450,14 +5762,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_parExpression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterParExpression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitParExpression(this);
-		}
 	}
 
 	public final ParExpressionContext parExpression() throws RecognitionException {
@@ -6496,14 +5800,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expressionList; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterExpressionList(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitExpressionList(this);
-		}
 	}
 
 	public final ExpressionListContext expressionList() throws RecognitionException {
@@ -6552,14 +5848,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statementExpression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterStatementExpression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitStatementExpression(this);
-		}
 	}
 
 	public final StatementExpressionContext statementExpression() throws RecognitionException {
@@ -6591,14 +5879,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_constantExpression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterConstantExpression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitConstantExpression(this);
-		}
 	}
 
 	public final ConstantExpressionContext constantExpression() throws RecognitionException {
@@ -6641,7 +5921,7 @@ public class JavaParser extends Parser {
 		public PrimitiveTypeContext primitiveType() {
 			return getRuleContext(PrimitiveTypeContext.class,0);
 		}
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public InnerCreatorContext innerCreator() {
 			return getRuleContext(InnerCreatorContext.class,0);
 		}
@@ -6661,14 +5941,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterExpression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitExpression(this);
-		}
 	}
 
 	public final ExpressionContext expression() throws RecognitionException {
@@ -7156,7 +6428,7 @@ public class JavaParser extends Parser {
 		public LiteralContext literal() {
 			return getRuleContext(LiteralContext.class,0);
 		}
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
@@ -7173,14 +6445,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_primary; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterPrimary(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitPrimary(this);
-		}
 	}
 
 	public final PrimaryContext primary() throws RecognitionException {
@@ -7309,14 +6573,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_creator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterCreator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitCreator(this);
-		}
 	}
 
 	public final CreatorContext creator() throws RecognitionException {
@@ -7386,9 +6642,9 @@ public class JavaParser extends Parser {
 	}
 
 	public static class CreatedNameContext extends ParserRuleContext {
-		public List<TerminalNode> Identifier() { return getTokens(JavaParser.Identifier); }
+		public List<TerminalNode> Identifier() { return getTokens(ProcessingParser.Identifier); }
 		public TerminalNode Identifier(int i) {
-			return getToken(JavaParser.Identifier, i);
+			return getToken(ProcessingParser.Identifier, i);
 		}
 		public List<TypeArgumentsOrDiamondContext> typeArgumentsOrDiamond() {
 			return getRuleContexts(TypeArgumentsOrDiamondContext.class);
@@ -7403,14 +6659,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_createdName; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterCreatedName(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitCreatedName(this);
-		}
 	}
 
 	public final CreatedNameContext createdName() throws RecognitionException {
@@ -7494,7 +6742,7 @@ public class JavaParser extends Parser {
 	}
 
 	public static class InnerCreatorContext extends ParserRuleContext {
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public ClassCreatorRestContext classCreatorRest() {
 			return getRuleContext(ClassCreatorRestContext.class,0);
 		}
@@ -7505,14 +6753,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_innerCreator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterInnerCreator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitInnerCreator(this);
-		}
 	}
 
 	public final InnerCreatorContext innerCreator() throws RecognitionException {
@@ -7563,14 +6803,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_arrayCreatorRest; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterArrayCreatorRest(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitArrayCreatorRest(this);
-		}
 	}
 
 	public final ArrayCreatorRestContext arrayCreatorRest() throws RecognitionException {
@@ -7709,14 +6941,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_classCreatorRest; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterClassCreatorRest(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitClassCreatorRest(this);
-		}
 	}
 
 	public final ClassCreatorRestContext classCreatorRest() throws RecognitionException {
@@ -7761,14 +6985,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_explicitGenericInvocation; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterExplicitGenericInvocation(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitExplicitGenericInvocation(this);
-		}
 	}
 
 	public final ExplicitGenericInvocationContext explicitGenericInvocation() throws RecognitionException {
@@ -7802,14 +7018,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_nonWildcardTypeArguments; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterNonWildcardTypeArguments(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitNonWildcardTypeArguments(this);
-		}
 	}
 
 	public final NonWildcardTypeArgumentsContext nonWildcardTypeArguments() throws RecognitionException {
@@ -7845,14 +7053,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeArgumentsOrDiamond; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterTypeArgumentsOrDiamond(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitTypeArgumentsOrDiamond(this);
-		}
 	}
 
 	public final TypeArgumentsOrDiamondContext typeArgumentsOrDiamond() throws RecognitionException {
@@ -7899,14 +7099,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_nonWildcardTypeArgumentsOrDiamond; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterNonWildcardTypeArgumentsOrDiamond(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitNonWildcardTypeArgumentsOrDiamond(this);
-		}
 	}
 
 	public final NonWildcardTypeArgumentsOrDiamondContext nonWildcardTypeArgumentsOrDiamond() throws RecognitionException {
@@ -7949,19 +7141,11 @@ public class JavaParser extends Parser {
 		public ArgumentsContext arguments() {
 			return getRuleContext(ArgumentsContext.class,0);
 		}
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public SuperSuffixContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_superSuffix; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterSuperSuffix(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitSuperSuffix(this);
-		}
 	}
 
 	public final SuperSuffixContext superSuffix() throws RecognitionException {
@@ -8016,7 +7200,7 @@ public class JavaParser extends Parser {
 		public SuperSuffixContext superSuffix() {
 			return getRuleContext(SuperSuffixContext.class,0);
 		}
-		public TerminalNode Identifier() { return getToken(JavaParser.Identifier, 0); }
+		public TerminalNode Identifier() { return getToken(ProcessingParser.Identifier, 0); }
 		public ArgumentsContext arguments() {
 			return getRuleContext(ArgumentsContext.class,0);
 		}
@@ -8024,14 +7208,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_explicitGenericInvocationSuffix; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterExplicitGenericInvocationSuffix(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitExplicitGenericInvocationSuffix(this);
-		}
 	}
 
 	public final ExplicitGenericInvocationSuffixContext explicitGenericInvocationSuffix() throws RecognitionException {
@@ -8082,14 +7258,6 @@ public class JavaParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_arguments; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).enterArguments(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JavaListener ) ((JavaListener)listener).exitArguments(this);
-		}
 	}
 
 	public final ArgumentsContext arguments() throws RecognitionException {

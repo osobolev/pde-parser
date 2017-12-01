@@ -1,5 +1,5 @@
-import ide.processing.JavaLexer;
-import ide.processing.JavaParser;
+import ide.processing.ProcessingLexer;
+import ide.processing.ProcessingParser;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 
@@ -15,8 +15,8 @@ public final class SamplesWalker {
      * @return true, если удалось разобрать успешно
      */
     private static boolean tryParse(Path file) throws IOException {
-        JavaLexer lexer = new JavaLexer(CharStreams.fromPath(file));
-        JavaParser parser = new JavaParser(new CommonTokenStream(lexer));
+        ProcessingLexer lexer = new ProcessingLexer(CharStreams.fromPath(file));
+        ProcessingParser parser = new ProcessingParser(new CommonTokenStream(lexer));
 
         parser.removeErrorListeners();
         MyErrorListener listener = new MyErrorListener();
